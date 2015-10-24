@@ -1,0 +1,27 @@
+
+
+
+<dom-module id="my-header">
+  <template>
+    <style>
+      :host {
+        display: block;
+        background: -webkit-linear-gradient(rgba(75,55,64,0.28) 19%, rgba(74,54,63,0.29) 37%, #4B3740 84%, #4B3740 100%), url("/images/DSC00304.JPG");
+        background: -o-linear-gradient(rgba(75,55,64,0.28) 19%, rgba(74,54,63,0.29) 37%, #4B3740 84%, #4B3740 100%), url("/images/DSC00304.JPG");
+        background: linear-gradient(rgba(75,55,64,0.28) 19%, rgba(74,54,63,0.29) 37%, #4B3740 84%, #4B3740 100%), url("/images/DSC00304.JPG");
+        background-repeat: no-repeat;
+        background-position: 10% 35%;
+        background-size: cover;
+        height: 455px;
+        filter: blur(2px);
+      }
+    </style>
+    
+    <my-name></my-name>
+  </template>
+  <script>
+    Polymer({
+      is: 'my-header'
+    });
+  </script>
+</dom-module>

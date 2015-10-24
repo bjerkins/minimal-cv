@@ -1,0 +1,90 @@
+
+
+
+<dom-module id="my-name">
+  <template>
+    <style>
+      :host {
+        display: block;
+        
+        /* Position */
+        padding-top: 320px;
+        text-align: left;
+      }
+
+      .name-container {
+        font-family: HelveticaNeue-Light;
+        font-size: 40px;
+        color: #C4D0DB;
+        letter-spacing: 1.11px;
+        line-height: 49px;
+        padding-left: 20px;
+      }
+
+      .position-container {
+        display: block;
+        font-family: HelveticaNeue-Thin;
+        font-size: 25px;
+        color: #C4D0DB;
+        letter-spacing: 0.69px;
+        line-height: 30px;
+      }
+
+      .avatar {
+        border-radius: 100px;
+      }
+
+      .profile-line {
+        position: relative;
+        /* Line: */
+        border-right: 1px solid #809FAC;
+        height: 55px;
+        top: -5px;
+        right: 40px;
+      }
+
+      social-media-icons {
+        padding-top: 19px;
+      }
+
+    </style>
+    
+    <div class="name-card vertical layout center start">
+      <div class="horizontal layout">
+        <div class="profile-photo">
+          <iron-image
+            class="avatar"
+            src="/images/bjarki2.JPG" 
+            width="82" 
+            height="82"
+            sizing="cover"
+            fade>
+          </iron-image>
+          <div class="profile-line"></div>
+        </div>
+        <div class="name-container">
+          Bjarki Madsen
+          <span class="position-container">Frontend Engineer | Falcon Social</span>
+          <social-media-icons 
+            icon="linkedin"
+            color="#828E97"
+            href="https://dk.linkedin.com/in/bjarkimadsen">
+          </social-media-icons>
+          <social-media-icons 
+            icon="github"
+            color="#828E97"
+            href="https://github.com/bjerkins">
+          </social-media-icons>
+        </div>  
+      </div>
+
+      
+    </div>
+    
+  </template>
+  <script>
+    Polymer({
+      is: 'my-name'
+    });
+  </script>
+</dom-module>
